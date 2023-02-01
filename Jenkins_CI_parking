@@ -126,7 +126,7 @@ pipeline {
         }
         stage ('DEPLOY'){
             steps{
-                echo "Deploying on ${params.BRANCH}..."
+                echo "Deploying on ${params.BRANCH} env..."
                 sleep 12
                 echo 'Deploy COMPLETE!'
             }
