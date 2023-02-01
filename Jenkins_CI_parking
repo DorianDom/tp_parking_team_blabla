@@ -8,127 +8,127 @@ pipeline {
     }
     stages {
         stage ('BUILD') {
-                steps {
-                    echo 'Building app...'
-                    sleep 1
-                    echo 'Building "[US] Demander à l\'utilisateur leur préférence pour les places de parking"...'
-                    sleep 2
-                    echo 'Build OK!'
-                    echo 'Building "[US] Proposer stationnement sur parking privé"...'
-                    sleep 1
-                    echo 'Build OK!'
-                    echo 'Building "[US] Trouver des places à coté d\'un magasin en centre ville"...'
-                    sleep 1
-                    echo 'Build OK!'
-                    echo 'Building "[US] Consulter le lieu des places de parking"...'
-                    sleep 2
-                    echo 'Build OK!'
-                    echo 'Building "[US] Regarder sur le site de la commune les horaires des parking"...'
-                    sleep 2
-                    echo 'Build OK!'
-                    echo 'Building "[US] Pouvoir accéder au parking grâce à plusieur type d\'accès"...'
-                    sleep 1
-                    echo 'Build OK!'
-                    echo 'Building "[US] Regarder les places restantes des parkings les plus proches"...'
-                    sleep 1
-                    echo 'Build OK!'
-                    echo 'Building "[US] Choisir le type de paiement dans l\'application"...'
-                    sleep 2
-                    echo 'Build OK!'
-                    echo 'Building "[US] Proposer une évalutation via AppStore ou GooglePay"...'
-                    sleep 1
-                    echo 'Build OK!'
-                    echo 'Building "[US]: Mettre à jour la plage des dates"...'
-                    sleep 2
-                    echo 'Build OK!'
-                    echo 'Building "[US] Utiliser la géolocalisation du téléphone"...'
-                    sleep 2
-                    echo 'Build OK!'
-                    echo 'Building "[US] Fidélisé ses clients"...'
-                    sleep 1
-                    echo 'Build OK!'
-                    echo 'Building "[US] Demander la date et l\'heure à l\'utilisateur"...'
-                    sleep 1
-                    echo 'Build OK!'
-                    echo 'Building "[US] Sélectionner le type de véhicule dans l\'application"...'
-                    sleep 2
-                    echo 'Build OK!'
-                    echo 'Building "EPIC] Localiser des places de parking"...'
-                    sleep 2
-                    echo 'Build OK!'
-                    echo 'Building "[US] Places de parking lors d\'évènements"...'
-                    sleep 1
-                    echo 'Build OK!'
-                    echo 'Build COMPLETE!'
-                }
+            steps {
+                echo 'Building app...'
+                sleep 1
+                echo 'Building "[US] Demander à l\'utilisateur leur préférence pour les places de parking"...'
+                sleep 2
+                echo 'Build OK!'
+                echo 'Building "[US] Proposer stationnement sur parking privé"...'
+                sleep 1
+                echo 'Build OK!'
+                echo 'Building "[US] Trouver des places à coté d\'un magasin en centre ville"...'
+                sleep 1
+                echo 'Build OK!'
+                echo 'Building "[US] Consulter le lieu des places de parking"...'
+                sleep 2
+                echo 'Build OK!'
+                echo 'Building "[US] Regarder sur le site de la commune les horaires des parking"...'
+                sleep 2
+                echo 'Build OK!'
+                echo 'Building "[US] Pouvoir accéder au parking grâce à plusieur type d\'accès"...'
+                sleep 1
+                echo 'Build OK!'
+                echo 'Building "[US] Regarder les places restantes des parkings les plus proches"...'
+                sleep 1
+                echo 'Build OK!'
+                echo 'Building "[US] Choisir le type de paiement dans l\'application"...'
+                sleep 2
+                echo 'Build OK!'
+                echo 'Building "[US] Proposer une évalutation via AppStore ou GooglePay"...'
+                sleep 1
+                echo 'Build OK!'
+                echo 'Building "[US]: Mettre à jour la plage des dates"...'
+                sleep 2
+                echo 'Build OK!'
+                echo 'Building "[US] Utiliser la géolocalisation du téléphone"...'
+                sleep 2
+                echo 'Build OK!'
+                echo 'Building "[US] Fidélisé ses clients"...'
+                sleep 1
+                echo 'Build OK!'
+                echo 'Building "[US] Demander la date et l\'heure à l\'utilisateur"...'
+                sleep 1
+                echo 'Build OK!'
+                echo 'Building "[US] Sélectionner le type de véhicule dans l\'application"...'
+                sleep 2
+                echo 'Build OK!'
+                echo 'Building "EPIC] Localiser des places de parking"...'
+                sleep 2
+                echo 'Build OK!'
+                echo 'Building "[US] Places de parking lors d\'évènements"...'
+                sleep 1
+                echo 'Build OK!'
+                echo 'Build COMPLETE!'
             }
-            stage ('TEST') {
+        }
+        stage ('TEST') {
+            steps {
                 if (params.SKIP_TEST) {
                     echo 'Skipping tests...'
                 }
                 else{
-                    steps {
-                        echo 'Testing app...'
-                        sleep 1
-                        echo 'Testing "[US] Demander à l\'utilisateur leur préférence pour les places de parking"...'
-                        sleep 2
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Proposer stationnement sur parking privé"...'
-                        sleep 1
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Trouver des places à coté d\'un magasin en centre ville"...'
-                        sleep 1
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Consulter le lieu des places de parking"...'
-                        sleep 2
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Regarder sur le site de la commune les horaires des parking"...'
-                        sleep 2
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Pouvoir accéder au parking grâce à plusieur type d\'accès"...'
-                        sleep 1
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Regarder les places restantes des parkings les plus proches"...'
-                        sleep 1
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Choisir le type de paiement dans l\'application"...'
-                        sleep 2
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Proposer une évalutation via AppStore ou GooglePay"...'
-                        sleep 1
-                        echo 'Test OK!'
-                        echo 'Testing "[US]: Mettre à jour la plage des dates"...'
-                        sleep 2
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Utiliser la géolocalisation du téléphone"...'
-                        sleep 2
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Fidélisé ses clients"...'
-                        sleep 1
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Demander la date et l\'heure à l\'utilisateur"...'
-                        sleep 1
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Sélectionner le type de véhicule dans l\'application"...'
-                        sleep 2
-                        echo 'Test OK!'
-                        echo 'Testing "[EPIC] Localiser des places de parking"...'
-                        sleep 2
-                        echo 'Test OK!'
-                        echo 'Testing "[US] Places de parking lors d\'évènements"...'
-                        sleep 1
-                        echo 'Test OK!'
-                        echo 'Test COMPLETE!'
-                    }
+                    echo 'Testing app...'
+                    sleep 1
+                    echo 'Testing "[US] Demander à l\'utilisateur leur préférence pour les places de parking"...'
+                    sleep 2
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Proposer stationnement sur parking privé"...'
+                    sleep 1
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Trouver des places à coté d\'un magasin en centre ville"...'
+                    sleep 1
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Consulter le lieu des places de parking"...'
+                    sleep 2
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Regarder sur le site de la commune les horaires des parking"...'
+                    sleep 2
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Pouvoir accéder au parking grâce à plusieur type d\'accès"...'
+                    sleep 1
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Regarder les places restantes des parkings les plus proches"...'
+                    sleep 1
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Choisir le type de paiement dans l\'application"...'
+                    sleep 2
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Proposer une évalutation via AppStore ou GooglePay"...'
+                    sleep 1
+                    echo 'Test OK!'
+                    echo 'Testing "[US]: Mettre à jour la plage des dates"...'
+                    sleep 2
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Utiliser la géolocalisation du téléphone"...'
+                    sleep 2
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Fidélisé ses clients"...'
+                    sleep 1
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Demander la date et l\'heure à l\'utilisateur"...'
+                    sleep 1
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Sélectionner le type de véhicule dans l\'application"...'
+                    sleep 2
+                    echo 'Test OK!'
+                    echo 'Testing "[EPIC] Localiser des places de parking"...'
+                    sleep 2
+                    echo 'Test OK!'
+                    echo 'Testing "[US] Places de parking lors d\'évènements"...'
+                    sleep 1
+                    echo 'Test OK!'
+                    echo 'Test COMPLETE!'
                 }
             }
-            stage ('DEPLOY'){
-                steps{
-                    echo "Deploying on ${params.BRANCH}..."
-                    sleep 12
-                    echo 'Deploy COMPLETE!'
-                }
+        }
+        stage ('DEPLOY'){
+            steps{
+                echo "Deploying on ${params.BRANCH}..."
+                sleep 12
+                echo 'Deploy COMPLETE!'
             }
+        }
    }
 }
 
